@@ -1,0 +1,36 @@
+#ss_main{
+    padding-top: 100px;
+    position: relative;
+}
+#ss_child{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#ss_child input{
+    font-family: Josefin;
+    width: 350px;
+}
+#button_search{
+    position: absolute;
+    right: 0;
+    font-family: Josefin;
+}
+@media only screen and (max-width: 769px){
+    #ss_child{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    #ss_child input{
+        width: 100%;
+    }
+    #ss_child:first-child button{
+        margin: 20px 0px;
+    }
+    #ss_main{
+        padding-top: 50px;
+    }
+    #button_search{
+        top: 190px;
+    }
+}
